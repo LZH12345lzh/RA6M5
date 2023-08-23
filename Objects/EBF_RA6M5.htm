@@ -1,0 +1,2017 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\EBF_RA6M5.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\EBF_RA6M5.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Mon May 22 19:01:26 2023
+<BR><P>
+<H3>Maximum Stack Usage =        436 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+vDebug_Task &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[a2]">bsp_prv_software_delay_loop</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[a2]">bsp_prv_software_delay_loop</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[4]">BusFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[8]">DebugMon_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[1]">NMI_Handler</a> from bsp_group_irq.o(.text.NMI_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[9]">PendSV_Handler</a> from portasm.o(.text.PendSV_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[5f]">RM_TOUCH_CallbackSet</a> from rm_touch.o(.text.RM_TOUCH_CallbackSet) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[60]">RM_TOUCH_Close</a> from rm_touch.o(.text.RM_TOUCH_Close) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[5c]">RM_TOUCH_DataGet</a> from rm_touch.o(.text.RM_TOUCH_DataGet) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[63]">RM_TOUCH_DriftControl</a> from rm_touch.o(.text.RM_TOUCH_DriftControl) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[5a]">RM_TOUCH_Open</a> from rm_touch.o(.text.RM_TOUCH_Open) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[5e]">RM_TOUCH_PadDataGet</a> from rm_touch.o(.text.RM_TOUCH_PadDataGet) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[5b]">RM_TOUCH_ScanStart</a> from rm_touch.o(.text.RM_TOUCH_ScanStart) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[5d]">RM_TOUCH_ScanStop</a> from rm_touch.o(.text.RM_TOUCH_ScanStop) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[61]">RM_TOUCH_SensitivityRatioGet</a> from rm_touch.o(.text.RM_TOUCH_SensitivityRatioGet) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[62]">RM_TOUCH_ThresholdAdjust</a> from rm_touch.o(.text.RM_TOUCH_ThresholdAdjust) referenced from rm_touch.o(.rodata.g_touch_on_ctsu)
+ <LI><a href="#[30]">R_CTSU_CallbackSet</a> from r_ctsu.o(.text.R_CTSU_CallbackSet) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[31]">R_CTSU_Close</a> from r_ctsu.o(.text.R_CTSU_Close) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[2d]">R_CTSU_DataGet</a> from r_ctsu.o(.text.R_CTSU_DataGet) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[33]">R_CTSU_DataInsert</a> from r_ctsu.o(.text.R_CTSU_DataInsert) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[2f]">R_CTSU_Diagnosis</a> from r_ctsu.o(.text.R_CTSU_Diagnosis) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[2b]">R_CTSU_Open</a> from r_ctsu.o(.text.R_CTSU_Open) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[2c]">R_CTSU_ScanStart</a> from r_ctsu.o(.text.R_CTSU_ScanStart) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[2e]">R_CTSU_ScanStop</a> from r_ctsu.o(.text.R_CTSU_ScanStop) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[32]">R_CTSU_SpecificDataGet</a> from r_ctsu.o(.text.R_CTSU_SpecificDataGet) referenced from r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+ <LI><a href="#[37]">R_IIC_MASTER_Abort</a> from r_iic_master.o(.text.R_IIC_MASTER_Abort) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[39]">R_IIC_MASTER_CallbackSet</a> from r_iic_master.o(.text.R_IIC_MASTER_CallbackSet) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[3b]">R_IIC_MASTER_Close</a> from r_iic_master.o(.text.R_IIC_MASTER_Close) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[34]">R_IIC_MASTER_Open</a> from r_iic_master.o(.text.R_IIC_MASTER_Open) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[35]">R_IIC_MASTER_Read</a> from r_iic_master.o(.text.R_IIC_MASTER_Read) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[38]">R_IIC_MASTER_SlaveAddressSet</a> from r_iic_master.o(.text.R_IIC_MASTER_SlaveAddressSet) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[3a]">R_IIC_MASTER_StatusGet</a> from r_iic_master.o(.text.R_IIC_MASTER_StatusGet) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[36]">R_IIC_MASTER_Write</a> from r_iic_master.o(.text.R_IIC_MASTER_Write) referenced from r_iic_master.o(.rodata.g_i2c_master_on_iic)
+ <LI><a href="#[3d]">R_IOPORT_Close</a> from r_ioport.o(.text.R_IOPORT_Close) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[3c]">R_IOPORT_Open</a> from r_ioport.o(.text.R_IOPORT_Open) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[3f]">R_IOPORT_PinCfg</a> from r_ioport.o(.text.R_IOPORT_PinCfg) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[40]">R_IOPORT_PinEventInputRead</a> from r_ioport.o(.text.R_IOPORT_PinEventInputRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[41]">R_IOPORT_PinEventOutputWrite</a> from r_ioport.o(.text.R_IOPORT_PinEventOutputWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[42]">R_IOPORT_PinRead</a> from r_ioport.o(.text.R_IOPORT_PinRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[43]">R_IOPORT_PinWrite</a> from r_ioport.o(.text.R_IOPORT_PinWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[3e]">R_IOPORT_PinsCfg</a> from r_ioport.o(.text.R_IOPORT_PinsCfg) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[44]">R_IOPORT_PortDirectionSet</a> from r_ioport.o(.text.R_IOPORT_PortDirectionSet) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[45]">R_IOPORT_PortEventInputRead</a> from r_ioport.o(.text.R_IOPORT_PortEventInputRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[46]">R_IOPORT_PortEventOutputWrite</a> from r_ioport.o(.text.R_IOPORT_PortEventOutputWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[47]">R_IOPORT_PortRead</a> from r_ioport.o(.text.R_IOPORT_PortRead) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[48]">R_IOPORT_PortWrite</a> from r_ioport.o(.text.R_IOPORT_PortWrite) referenced from r_ioport.o(.rodata.g_ioport_on_ioport)
+ <LI><a href="#[56]">R_QSPI_AutoCalibrate</a> from r_qspi.o(.text.R_QSPI_AutoCalibrate) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[55]">R_QSPI_BankSet</a> from r_qspi.o(.text.R_QSPI_BankSet) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[57]">R_QSPI_Close</a> from r_qspi.o(.text.R_QSPI_Close) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[4d]">R_QSPI_DirectRead</a> from r_qspi.o(.text.R_QSPI_DirectRead) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[4e]">R_QSPI_DirectTransfer</a> from r_qspi.o(.text.R_QSPI_DirectTransfer) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[4c]">R_QSPI_DirectWrite</a> from r_qspi.o(.text.R_QSPI_DirectWrite) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[51]">R_QSPI_Erase</a> from r_qspi.o(.text.R_QSPI_Erase) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[4b]">R_QSPI_Open</a> from r_qspi.o(.text.R_QSPI_Open) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[4f]">R_QSPI_SpiProtocolSet</a> from r_qspi.o(.text.R_QSPI_SpiProtocolSet) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[52]">R_QSPI_StatusGet</a> from r_qspi.o(.text.R_QSPI_StatusGet) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[50]">R_QSPI_Write</a> from r_qspi.o(.text.R_QSPI_Write) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[53]">R_QSPI_XipEnter</a> from r_qspi.o(.text.R_QSPI_XipEnter) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[54]">R_QSPI_XipExit</a> from r_qspi.o(.text.R_QSPI_XipExit) referenced from r_qspi.o(.rodata.g_qspi_on_spi_flash)
+ <LI><a href="#[0]">Reset_Handler</a> from startup.o(.text.Reset_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[7]">SVC_Handler</a> from portasm.o(.text.SVC_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[6]">SecureFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[a]">SysTick_Handler</a> from port.o(.text.SysTick_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup.o(.text.Default_Handler) referenced from startup.o(.fixed_vectors)
+ <LI><a href="#[2a]">adc_callback</a> from bsp_adc.o(.text.adc_callback) referenced from hal_data.o(.rodata.g_adc0_cfg)
+ <LI><a href="#[16]">adc_scan_end_isr</a> from r_adc.o(.text.adc_scan_end_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[1c]">ctsu_end_isr</a> from r_ctsu.o(.text.ctsu_end_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[1b]">ctsu_read_isr</a> from r_ctsu.o(.text.ctsu_read_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[1a]">ctsu_write_isr</a> from r_ctsu.o(.text.ctsu_write_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[29]">debug_uart4_callback</a> from bsp_uart4.o(.text.debug_uart4_callback) referenced from hal_data.o(.rodata.debug_uart4_cfg)
+ <LI><a href="#[15]">dmac_int_isr</a> from r_dmac.o(.text.dmac_int_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[27]">fputc</a> from bsp_uart4.o(.text.fputc) referenced from printfa.o(i.__0printf)
+ <LI><a href="#[58]">gpt0_timing_callback</a> from bsp_gpt_timing.o(.text.gpt0_timing_callback) referenced from hal_data.o(.rodata.g_timer_gpt0_cfg)
+ <LI><a href="#[59]">gpt7_input_capture_callback</a> from bsp_gpt_input_capture.o(.text.gpt7_input_capture_callback) referenced from hal_data.o(.rodata.g_timer_gpt7_cfg)
+ <LI><a href="#[18]">gpt_capture_a_isr</a> from r_gpt.o(.text.gpt_capture_a_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[19]">gpt_capture_b_isr</a> from r_gpt.o(.text.gpt_capture_b_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[17]">gpt_counter_overflow_isr</a> from r_gpt.o(.text.gpt_counter_overflow_isr) referenced 2 times from vector_data.o(.application_vectors)
+ <LI><a href="#[28]">i2c_callback</a> from i2c_ee.o(.text.i2c_callback) referenced from hal_data.o(.rodata.EEPROM_cfg)
+ <LI><a href="#[12]">iic_master_eri_isr</a> from r_iic_master.o(.text.iic_master_eri_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[f]">iic_master_rxi_isr</a> from r_iic_master.o(.text.iic_master_rxi_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[11]">iic_master_tei_isr</a> from r_iic_master.o(.text.iic_master_tei_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[10]">iic_master_txi_isr</a> from r_iic_master.o(.text.iic_master_txi_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[49]">iwdt_callback</a> from bsp_iwdt.o(.text.iwdt_callback) referenced from hal_data.o(.rodata.g_iwdt0_cfg)
+ <LI><a href="#[1d]">iwdt_nmi_internal_callback</a> from r_iwdt.o(.text.iwdt_nmi_internal_callback) referenced 2 times from r_iwdt.o(.text.R_IWDT_Open)
+ <LI><a href="#[26]">prvIdleTask</a> from tasks.o(.text.prvIdleTask) referenced 2 times from tasks.o(.text.vTaskStartScheduler)
+ <LI><a href="#[25]">prvTaskExitError</a> from port.o(.text.prvTaskExitError) referenced 2 times from port.o(.text.pxPortInitialiseStack)
+ <LI><a href="#[4a]">qe_touch_callback</a> from qe_touch_config.o(.text.qe_touch_callback) referenced from qe_touch_config.o(.rodata.g_qe_ctsu_cfg_config01)
+ <LI><a href="#[23]">qe_touch_main</a> from qe_touch_sample.o(.text.qe_touch_main) referenced 2 times from hal_entry.o(.text.hal_entry)
+ <LI><a href="#[e]">sci_uart_eri_isr</a> from r_sci_uart.o(.text.sci_uart_eri_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[b]">sci_uart_rxi_isr</a> from r_sci_uart.o(.text.sci_uart_rxi_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[d]">sci_uart_tei_isr</a> from r_sci_uart.o(.text.sci_uart_tei_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[c]">sci_uart_txi_isr</a> from r_sci_uart.o(.text.sci_uart_txi_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[13]">sdhimmc_accs_isr</a> from r_sdhi.o(.text.sdhimmc_accs_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[14]">sdhimmc_card_isr</a> from r_sdhi.o(.text.sdhimmc_card_isr) referenced from vector_data.o(.application_vectors)
+ <LI><a href="#[21]">vAdc_Task</a> from adc_task.o(.text.vAdc_Task) referenced 2 times from hal_entry.o(.text.hal_entry)
+ <LI><a href="#[1f]">vDebug_Task</a> from debug_task.o(.text.vDebug_Task) referenced 2 times from hal_entry.o(.text.hal_entry)
+ <LI><a href="#[20]">vKey_Task</a> from key_task.o(.text.vKey_Task) referenced 2 times from hal_entry.o(.text.hal_entry)
+ <LI><a href="#[1e]">vPortSVCHandler_C</a> from port.o(.text.vPortSVCHandler_C) referenced from portasm.o(.text.SVC_Handler)
+ <LI><a href="#[22]">vPwm_Task</a> from pwm_task.o(.text.vPwm_Task) referenced 2 times from hal_entry.o(.text.hal_entry)
+ <LI><a href="#[24]">vWdt_Task</a> from wdt_task.o(.text.vWdt_Task) referenced 2 times from hal_entry.o(.text.hal_entry)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[65]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_PWM_SetDuty
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[89]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writepage
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_rxi_isr
+</UL>
+
+<P><STRONG><a name="[b3]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[fe]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[69]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[88]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writedrase
+</UL>
+
+<P><STRONG><a name="[ff]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[68]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Queue_Init
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+
+<P><STRONG><a name="[8b]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdhimmc_accs_isr
+</UL>
+
+<P><STRONG><a name="[100]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[6a]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[6b]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 48 bytes, dmul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[6d]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_ddiv &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[6f]"></a>__aeabi_ui2d</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, dfltui.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+</UL>
+
+<P><STRONG><a name="[101]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[fd]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[67]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[102]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[66]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[103]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[104]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[6e]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[6c]"></a>_double_epilogue</STRONG> (Thumb, 156 bytes, Stack size 32 bytes, depilogue.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[70]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[72]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[73]"></a>__aeabi_drsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[74]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[fa]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[71]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[105]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+
+<P><STRONG><a name="[c2]"></a>Buffercmp</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, bsp_qspi_flash.o(.text.Buffercmp))
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[75]"></a>Debug_UART4_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, bsp_uart4.o(.text.Debug_UART4_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = Debug_UART4_Init &rArr; R_SCI_UART_Open
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Open
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[8]"></a>DebugMon_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[106]"></a>Default_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler), UNUSED)
+
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[6]"></a>SecureFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, startup.o(.text.Default_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[78]"></a>GPT_InputCapture_Init</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, bsp_gpt_input_capture.o(.text.GPT_InputCapture_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = GPT_InputCapture_Init &rArr; R_GPT_Open &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Enable
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_InfoGet
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Start
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+</UL>
+
+<P><STRONG><a name="[7d]"></a>GPT_PWM_Init</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bsp_gpt_pwm_output.o(.text.GPT_PWM_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = GPT_PWM_Init &rArr; R_GPT_Open &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Start
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+</UL>
+
+<P><STRONG><a name="[7e]"></a>GPT_PWM_SetDuty</STRONG> (Thumb, 58 bytes, Stack size 32 bytes, bsp_gpt_pwm_output.o(.text.GPT_PWM_SetDuty), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_DutyCycleSet
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_InfoGet
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[80]"></a>GPT_Timing_Init</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, bsp_gpt_timing.o(.text.GPT_Timing_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = GPT_Timing_Init &rArr; R_GPT_Open &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Start
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+</UL>
+
+<P><STRONG><a name="[81]"></a>I2C_EE_BufferRead</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, i2c_ee.o(.text.I2C_EE_BufferRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = I2C_EE_BufferRead &rArr; R_IIC_MASTER_Read &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Read
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Write
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+</UL>
+
+<P><STRONG><a name="[83]"></a>I2C_EE_BufferWrite</STRONG> (Thumb, 150 bytes, Stack size 24 bytes, i2c_ee.o(.text.I2C_EE_BufferWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = I2C_EE_BufferWrite &rArr; I2C_EE_Writepage &rArr; R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writepage
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+</UL>
+
+<P><STRONG><a name="[85]"></a>I2C_EE_Init</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, i2c_ee.o(.text.I2C_EE_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = I2C_EE_Init &rArr; R_IIC_MASTER_Open &rArr; iic_master_open_hw_master
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Open
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[86]"></a>I2C_EE_WaitState</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, i2c_ee.o(.text.I2C_EE_WaitState))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = I2C_EE_WaitState
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writepage
+</UL>
+
+<P><STRONG><a name="[87]"></a>I2C_EE_Writedrase</STRONG> (Thumb, 32 bytes, Stack size 264 bytes, i2c_ee.o(.text.I2C_EE_Writedrase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = I2C_EE_Writedrase &rArr; I2C_EE_Writepage &rArr; R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writepage
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[84]"></a>I2C_EE_Writepage</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, i2c_ee.o(.text.I2C_EE_Writepage))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = I2C_EE_Writepage &rArr; R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_WaitState
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Write
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_BufferWrite
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writedrase
+</UL>
+
+<P><STRONG><a name="[8a]"></a>I2C_Test</STRONG> (Thumb, 212 bytes, Stack size 96 bytes, i2c_ee.o(.text.I2C_Test))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = I2C_Test &rArr; I2C_EE_BufferWrite &rArr; I2C_EE_Writepage &rArr; R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_BufferRead
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_BufferWrite
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putchar
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[8f]"></a>IWDT_Feed</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, bsp_iwdt.o(.text.IWDT_Feed))
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IWDT_Refresh
+</UL>
+<BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vWdt_Task
+</UL>
+
+<P><STRONG><a name="[91]"></a>IWDT_Init</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, bsp_iwdt.o(.text.IWDT_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = IWDT_Init &rArr; R_IWDT_Open
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IWDT_Refresh
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IWDT_Open
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vWdt_Task
+</UL>
+
+<P><STRONG><a name="[93]"></a>Key_Scan</STRONG> (Thumb, 76 bytes, Stack size 32 bytes, bsp_key.o(.text.Key_Scan))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Key_Scan
+</UL>
+<BR>[Calls]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vKey_Task
+</UL>
+
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, bsp_group_irq.o(.text.NMI_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[9]"></a>PendSV_Handler</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, portasm.o(.text.PendSV_Handler))
+<BR><BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSwitchContext
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[94]"></a>QSPI_FLASH_BufferRead</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, bsp_qspi_flash.o(.text.QSPI_FLASH_BufferRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = QSPI_FLASH_BufferRead &rArr; R_QSPI_Read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_Read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[96]"></a>QSPI_FLASH_BufferWrite</STRONG> (Thumb, 262 bytes, Stack size 32 bytes, bsp_qspi_flash.o(.text.QSPI_FLASH_BufferWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = QSPI_FLASH_BufferWrite &rArr; QSPI_FLASH_WaitForWriteEnd &rArr; puts &rArr; fputc &rArr; R_SCI_UART_Write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_Write
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_WaitForWriteEnd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[98]"></a>QSPI_FLASH_Init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, bsp_qspi_flash.o(.text.QSPI_FLASH_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = QSPI_FLASH_Init &rArr; R_QSPI_Open
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_Open
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[99]"></a>QSPI_FLASH_ReadDeviceID</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, bsp_qspi_flash.o(.text.QSPI_FLASH_ReadDeviceID))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = QSPI_FLASH_ReadDeviceID &rArr; R_QSPI_DirectWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_DirectRead
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_DirectWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[9a]"></a>QSPI_FLASH_ReadID</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, bsp_qspi_flash.o(.text.QSPI_FLASH_ReadID))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = QSPI_FLASH_ReadID &rArr; R_QSPI_DirectWrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_DirectRead
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_DirectWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[9b]"></a>QSPI_FLASH_SectorErase</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, bsp_qspi_flash.o(.text.QSPI_FLASH_SectorErase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = QSPI_FLASH_SectorErase &rArr; QSPI_FLASH_WaitForWriteEnd &rArr; puts &rArr; fputc &rArr; R_SCI_UART_Write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_WaitForWriteEnd
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_DirectWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[97]"></a>QSPI_FLASH_WaitForWriteEnd</STRONG> (Thumb, 88 bytes, Stack size 32 bytes, bsp_qspi_flash.o(.text.QSPI_FLASH_WaitForWriteEnd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = QSPI_FLASH_WaitForWriteEnd &rArr; puts &rArr; fputc &rArr; R_SCI_UART_Write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_QSPI_StatusGet
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_BufferWrite
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_SectorErase
+</UL>
+
+<P><STRONG><a name="[e1]"></a>Queue_HadUse</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, bsp_uart4.o(.text.Queue_HadUse))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+</UL>
+
+<P><STRONG><a name="[9c]"></a>Queue_Init</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, bsp_uart4.o(.text.Queue_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Queue_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+</UL>
+
+<P><STRONG><a name="[e2]"></a>Queue_Read</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, bsp_uart4.o(.text.Queue_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Queue_Read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+</UL>
+
+<P><STRONG><a name="[e0]"></a>Queue_isEmpty</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, bsp_uart4.o(.text.Queue_isEmpty))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+</UL>
+
+<P><STRONG><a name="[5f]"></a>RM_TOUCH_CallbackSet</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rm_touch.o(.text.RM_TOUCH_CallbackSet))
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[60]"></a>RM_TOUCH_Close</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, rm_touch.o(.text.RM_TOUCH_Close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RM_TOUCH_Close
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[5c]"></a>RM_TOUCH_DataGet</STRONG> (Thumb, 494 bytes, Stack size 64 bytes, rm_touch.o(.text.RM_TOUCH_DataGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = RM_TOUCH_DataGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qe_touch_main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[63]"></a>RM_TOUCH_DriftControl</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rm_touch.o(.text.RM_TOUCH_DriftControl))
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[5a]"></a>RM_TOUCH_Open</STRONG> (Thumb, 366 bytes, Stack size 56 bytes, rm_touch.o(.text.RM_TOUCH_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = RM_TOUCH_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qe_touch_main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[5e]"></a>RM_TOUCH_PadDataGet</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rm_touch.o(.text.RM_TOUCH_PadDataGet))
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[5b]"></a>RM_TOUCH_ScanStart</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, rm_touch.o(.text.RM_TOUCH_ScanStart))
+<BR><BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qe_touch_main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[5d]"></a>RM_TOUCH_ScanStop</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, rm_touch.o(.text.RM_TOUCH_ScanStop))
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[61]"></a>RM_TOUCH_SensitivityRatioGet</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, rm_touch.o(.text.RM_TOUCH_SensitivityRatioGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RM_TOUCH_SensitivityRatioGet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[62]"></a>RM_TOUCH_ThresholdAdjust</STRONG> (Thumb, 122 bytes, Stack size 20 bytes, rm_touch.o(.text.RM_TOUCH_ThresholdAdjust))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RM_TOUCH_ThresholdAdjust
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rm_touch.o(.rodata.g_touch_on_ctsu)
+</UL>
+<P><STRONG><a name="[9d]"></a>R_ADC_Open</STRONG> (Thumb, 260 bytes, Stack size 40 bytes, r_adc.o(.text.R_ADC_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = R_ADC_Open
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_irq_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_Init
+</UL>
+
+<P><STRONG><a name="[bb]"></a>R_ADC_Read</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, r_adc.o(.text.R_ADC_Read))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+</UL>
+
+<P><STRONG><a name="[b8]"></a>R_ADC_ScanCfg</STRONG> (Thumb, 470 bytes, Stack size 16 bytes, r_adc.o(.text.R_ADC_ScanCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_ADC_ScanCfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_Init
+</UL>
+
+<P><STRONG><a name="[ba]"></a>R_ADC_ScanStart</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, r_adc.o(.text.R_ADC_ScanStart))
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+</UL>
+
+<P><STRONG><a name="[ac]"></a>R_BSP_GroupIrqWrite</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, bsp_group_irq.o(.text.R_BSP_GroupIrqWrite))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IWDT_Open
+</UL>
+
+<P><STRONG><a name="[9f]"></a>R_BSP_Init_RTC</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, bsp_clocks.o(.text.R_BSP_Init_RTC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = R_BSP_Init_RTC &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[a0]"></a>R_BSP_RegisterProtectDisable</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, bsp_register_protection.o(.text.R_BSP_RegisterProtectDisable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_irq_cfg
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+</UL>
+
+<P><STRONG><a name="[a1]"></a>R_BSP_RegisterProtectEnable</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, bsp_register_protection.o(.text.R_BSP_RegisterProtectEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_irq_cfg
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+</UL>
+
+<P><STRONG><a name="[82]"></a>R_BSP_SoftwareDelay</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, bsp_delay.o(.text.R_BSP_SoftwareDelay))
+<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_software_delay_loop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_BufferRead
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_WaitState
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writepage
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_Init
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Init
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_CTSU_Open
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_init
+</UL>
+
+<P><STRONG><a name="[a3]"></a>R_BSP_WarmStart</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, hal_entry.o(.text.R_BSP_WarmStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = R_BSP_WarmStart &rArr; R_IOPORT_Open &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[30]"></a>R_CTSU_CallbackSet</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, r_ctsu.o(.text.R_CTSU_CallbackSet))
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[31]"></a>R_CTSU_Close</STRONG> (Thumb, 84 bytes, Stack size 0 bytes, r_ctsu.o(.text.R_CTSU_Close))
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[2d]"></a>R_CTSU_DataGet</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, r_ctsu.o(.text.R_CTSU_DataGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = R_CTSU_DataGet &rArr; ctsu_initial_offset_tuning
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctsu_initial_offset_tuning
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctsu_correction_exec
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[33]"></a>R_CTSU_DataInsert</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, r_ctsu.o(.text.R_CTSU_DataInsert))
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[2f]"></a>R_CTSU_Diagnosis</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, r_ctsu.o(.text.R_CTSU_Diagnosis))
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[2b]"></a>R_CTSU_Open</STRONG> (Thumb, 1222 bytes, Stack size 40 bytes, r_ctsu.o(.text.R_CTSU_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = R_CTSU_Open &rArr; R_IOPORT_Open &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_Open
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_Close
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinsCfg
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[2c]"></a>R_CTSU_ScanStart</STRONG> (Thumb, 176 bytes, Stack size 8 bytes, r_ctsu.o(.text.R_CTSU_ScanStart))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_CTSU_ScanStart
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[2e]"></a>R_CTSU_ScanStop</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, r_ctsu.o(.text.R_CTSU_ScanStop))
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[32]"></a>R_CTSU_SpecificDataGet</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, r_ctsu.o(.text.R_CTSU_SpecificDataGet))
+<BR>[Address Reference Count : 1]<UL><LI> r_ctsu.o(.rodata.g_ctsu_on_ctsu)
+</UL>
+<P><STRONG><a name="[7f]"></a>R_GPT_DutyCycleSet</STRONG> (Thumb, 172 bytes, Stack size 40 bytes, r_gpt.o(.text.R_GPT_DutyCycleSet), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_calculate_duty_cycle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_PWM_SetDuty
+</UL>
+
+<P><STRONG><a name="[7b]"></a>R_GPT_Enable</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, r_gpt.o(.text.R_GPT_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_GPT_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_InputCapture_Init
+</UL>
+
+<P><STRONG><a name="[7a]"></a>R_GPT_InfoGet</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, r_gpt.o(.text.R_GPT_InfoGet))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_PWM_SetDuty
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_InputCapture_Init
+</UL>
+
+<P><STRONG><a name="[79]"></a>R_GPT_Open</STRONG> (Thumb, 518 bytes, Stack size 40 bytes, r_gpt.o(.text.R_GPT_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = R_GPT_Open &rArr; gpt_calculate_duty_cycle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_enable_irq
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_calculate_duty_cycle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_PWM_Init
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_InputCapture_Init
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_Timing_Init
+</UL>
+
+<P><STRONG><a name="[7c]"></a>R_GPT_Start</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, r_gpt.o(.text.R_GPT_Start))
+<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_PWM_Init
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_InputCapture_Init
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_Timing_Init
+</UL>
+
+<P><STRONG><a name="[37]"></a>R_IIC_MASTER_Abort</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, r_iic_master.o(.text.R_IIC_MASTER_Abort))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_IIC_MASTER_Abort &rArr; iic_master_open_hw_master
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_open_hw_master
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[39]"></a>R_IIC_MASTER_CallbackSet</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, r_iic_master.o(.text.R_IIC_MASTER_CallbackSet))
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[3b]"></a>R_IIC_MASTER_Close</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, r_iic_master.o(.text.R_IIC_MASTER_Close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_IIC_MASTER_Close &rArr; iic_master_open_hw_master
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_open_hw_master
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[34]"></a>R_IIC_MASTER_Open</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, r_iic_master.o(.text.R_IIC_MASTER_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = R_IIC_MASTER_Open &rArr; iic_master_open_hw_master
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_open_hw_master
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[35]"></a>R_IIC_MASTER_Read</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, r_iic_master.o(.text.R_IIC_MASTER_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = R_IIC_MASTER_Read &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_read_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_BufferRead
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[38]"></a>R_IIC_MASTER_SlaveAddressSet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, r_iic_master.o(.text.R_IIC_MASTER_SlaveAddressSet))
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[3a]"></a>R_IIC_MASTER_StatusGet</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, r_iic_master.o(.text.R_IIC_MASTER_StatusGet))
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[36]"></a>R_IIC_MASTER_Write</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, r_iic_master.o(.text.R_IIC_MASTER_Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_read_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_BufferRead
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writepage
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_iic_master.o(.rodata.g_i2c_master_on_iic)
+</UL>
+<P><STRONG><a name="[3d]"></a>R_IOPORT_Close</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_Close))
+<BR><BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_CTSU_Open
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[3c]"></a>R_IOPORT_Open</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, r_ioport.o(.text.R_IOPORT_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = R_IOPORT_Open &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_WarmStart
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qe_touch_main
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_CTSU_Open
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[3f]"></a>R_IOPORT_PinCfg</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, r_ioport.o(.text.R_IOPORT_PinCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = R_IOPORT_PinCfg &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[40]"></a>R_IOPORT_PinEventInputRead</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_PinEventInputRead))
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[41]"></a>R_IOPORT_PinEventOutputWrite</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, r_ioport.o(.text.R_IOPORT_PinEventOutputWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_IOPORT_PinEventOutputWrite
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[42]"></a>R_IOPORT_PinRead</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_PinRead))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Scan
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[43]"></a>R_IOPORT_PinWrite</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_PinWrite))
+<BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Init
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vKey_Task
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[3e]"></a>R_IOPORT_PinsCfg</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, r_ioport.o(.text.R_IOPORT_PinsCfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = R_IOPORT_PinsCfg &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_CTSU_Open
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[44]"></a>R_IOPORT_PortDirectionSet</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, r_ioport.o(.text.R_IOPORT_PortDirectionSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_IOPORT_PortDirectionSet
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[45]"></a>R_IOPORT_PortEventInputRead</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_PortEventInputRead))
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[46]"></a>R_IOPORT_PortEventOutputWrite</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_PortEventOutputWrite))
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[47]"></a>R_IOPORT_PortRead</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_PortRead))
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[48]"></a>R_IOPORT_PortWrite</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, r_ioport.o(.text.R_IOPORT_PortWrite))
+<BR>[Address Reference Count : 1]<UL><LI> r_ioport.o(.rodata.g_ioport_on_ioport)
+</UL>
+<P><STRONG><a name="[ec]"></a>R_IWDT_CounterGet</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, r_iwdt.o(.text.R_IWDT_CounterGet))
+<BR><BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vWdt_Task
+</UL>
+
+<P><STRONG><a name="[92]"></a>R_IWDT_Open</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, r_iwdt.o(.text.R_IWDT_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_IWDT_Open
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_GroupIrqWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Init
+</UL>
+
+<P><STRONG><a name="[90]"></a>R_IWDT_Refresh</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, r_iwdt.o(.text.R_IWDT_Refresh))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Feed
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Init
+</UL>
+
+<P><STRONG><a name="[56]"></a>R_QSPI_AutoCalibrate</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, r_qspi.o(.text.R_QSPI_AutoCalibrate))
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[55]"></a>R_QSPI_BankSet</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, r_qspi.o(.text.R_QSPI_BankSet))
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[57]"></a>R_QSPI_Close</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, r_qspi.o(.text.R_QSPI_Close))
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[4d]"></a>R_QSPI_DirectRead</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, r_qspi.o(.text.R_QSPI_DirectRead))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_ReadID
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_ReadDeviceID
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[4e]"></a>R_QSPI_DirectTransfer</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, r_qspi.o(.text.R_QSPI_DirectTransfer))
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[4c]"></a>R_QSPI_DirectWrite</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, r_qspi.o(.text.R_QSPI_DirectWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_QSPI_DirectWrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_SectorErase
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_ReadID
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_ReadDeviceID
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[51]"></a>R_QSPI_Erase</STRONG> (Thumb, 168 bytes, Stack size 16 bytes, r_qspi.o(.text.R_QSPI_Erase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_QSPI_Erase
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[4b]"></a>R_QSPI_Open</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, r_qspi.o(.text.R_QSPI_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_QSPI_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[95]"></a>R_QSPI_Read</STRONG> (Thumb, 112 bytes, Stack size 8 bytes, bsp_qspi_flash.o(.text.R_QSPI_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_QSPI_Read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_BufferRead
+</UL>
+
+<P><STRONG><a name="[4f]"></a>R_QSPI_SpiProtocolSet</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, r_qspi.o(.text.R_QSPI_SpiProtocolSet))
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[52]"></a>R_QSPI_StatusGet</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, r_qspi.o(.text.R_QSPI_StatusGet))
+<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_WaitForWriteEnd
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[50]"></a>R_QSPI_Write</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, r_qspi.o(.text.R_QSPI_Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = R_QSPI_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_BufferWrite
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[53]"></a>R_QSPI_XipEnter</STRONG> (Thumb, 60 bytes, Stack size 4 bytes, r_qspi.o(.text.R_QSPI_XipEnter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_QSPI_XipEnter
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[54]"></a>R_QSPI_XipExit</STRONG> (Thumb, 56 bytes, Stack size 4 bytes, r_qspi.o(.text.R_QSPI_XipExit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = R_QSPI_XipExit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_qspi.o(.rodata.g_qspi_on_spi_flash)
+</UL>
+<P><STRONG><a name="[76]"></a>R_SCI_UART_Open</STRONG> (Thumb, 798 bytes, Stack size 32 bytes, r_sci_uart.o(.text.R_SCI_UART_Open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = R_SCI_UART_Open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_UART4_Init
+</UL>
+
+<P><STRONG><a name="[be]"></a>R_SCI_UART_Write</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, r_sci_uart.o(.text.R_SCI_UART_Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = R_SCI_UART_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, startup.o(.text.Reset_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 340<LI>Call Chain = Reset_Handler &rArr; main &rArr; hal_entry &rArr; I2C_EE_Writedrase &rArr; I2C_EE_Writepage &rArr; R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[7]"></a>SVC_Handler</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, portasm.o(.text.SVC_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[a]"></a>SysTick_Handler</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, port.o(.text.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = SysTick_Handler &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIncrementTick
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vClearInterruptMask
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulSetInterruptMask
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(.fixed_vectors)
+</UL>
+<P><STRONG><a name="[b4]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, bsp_clocks.o(.text.SystemCoreClockUpdate))
+<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[ad]"></a>SystemInit</STRONG> (Thumb, 212 bytes, Stack size 16 bytes, system.o(.text.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = SystemInit &rArr; R_BSP_WarmStart &rArr; R_IOPORT_Open &rArr; r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_WarmStart
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_init
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_irq_cfg
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_Init_RTC
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_clock_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[77]"></a>__aeabi_assert</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, bsp_common.o(.text.__aeabi_assert))
+<BR><BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_Init
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_UART4_Init
+</UL>
+
+<P><STRONG><a name="[b7]"></a>adc_Init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, bsp_adc.o(.text.adc_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = adc_Init &rArr; R_ADC_Open
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_ScanCfg
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Open
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+</UL>
+
+<P><STRONG><a name="[2a]"></a>adc_callback</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, bsp_adc.o(.text.adc_callback))
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_adc0_cfg)
+</UL>
+<P><STRONG><a name="[b9]"></a>adc_read</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, bsp_adc.o(.text.adc_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = adc_read &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Read
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_ScanStart
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt0_timing_callback
+</UL>
+
+<P><STRONG><a name="[16]"></a>adc_scan_end_isr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, r_adc.o(.text.adc_scan_end_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = adc_scan_end_isr &rArr; r_adc_scan_end_common_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_adc_scan_end_common_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[b2]"></a>bsp_clock_init</STRONG> (Thumb, 272 bytes, Stack size 32 bytes, bsp_clocks.o(.text.bsp_clock_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bsp_clock_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[b6]"></a>bsp_init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, bsp_common.o(.text.bsp_init_internal))
+<BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[107]"></a>bsp_init_internal</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, bsp_common.o(.text.bsp_init_internal), UNUSED)
+
+<P><STRONG><a name="[b5]"></a>bsp_irq_cfg</STRONG> (Thumb, 146 bytes, Stack size 32 bytes, bsp_irq.o(.text.bsp_irq_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = bsp_irq_cfg &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[a2]"></a>bsp_prv_software_delay_loop</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, bsp_delay.o(.text.bsp_prv_software_delay_loop))
+<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_software_delay_loop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_prv_software_delay_loop
+</UL>
+
+<P><STRONG><a name="[bd]"></a>ctsu_end_interrupt</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, r_ctsu.o(.text.ctsu_end_interrupt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ctsu_end_interrupt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctsu_end_isr
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctsu_read_isr
+</UL>
+
+<P><STRONG><a name="[1c]"></a>ctsu_end_isr</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, r_ctsu.o(.text.ctsu_end_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ctsu_end_isr &rArr; ctsu_end_interrupt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctsu_end_interrupt
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[1b]"></a>ctsu_read_isr</STRONG> (Thumb, 152 bytes, Stack size 8 bytes, r_ctsu.o(.text.ctsu_read_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ctsu_read_isr &rArr; ctsu_end_interrupt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ctsu_end_interrupt
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[1a]"></a>ctsu_write_isr</STRONG> (Thumb, 158 bytes, Stack size 0 bytes, r_ctsu.o(.text.ctsu_write_isr))
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[29]"></a>debug_uart4_callback</STRONG> (Thumb, 120 bytes, Stack size 8 bytes, bsp_uart4.o(.text.debug_uart4_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = debug_uart4_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.debug_uart4_cfg)
+</UL>
+<P><STRONG><a name="[15]"></a>dmac_int_isr</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, r_dmac.o(.text.dmac_int_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dmac_int_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[27]"></a>fputc</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, bsp_uart4.o(.text.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = fputc &rArr; R_SCI_UART_Write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_SCI_UART_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putchar
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
+</UL>
+<P><STRONG><a name="[58]"></a>gpt0_timing_callback</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, bsp_gpt_timing.o(.text.gpt0_timing_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = gpt0_timing_callback &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_read
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_timer_gpt0_cfg)
+</UL>
+<P><STRONG><a name="[59]"></a>gpt7_input_capture_callback</STRONG> (Thumb, 194 bytes, Stack size 0 bytes, bsp_gpt_input_capture.o(.text.gpt7_input_capture_callback))
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_timer_gpt7_cfg)
+</UL>
+<P><STRONG><a name="[18]"></a>gpt_capture_a_isr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, r_gpt.o(.text.gpt_capture_a_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = gpt_capture_a_isr &rArr; r_gpt_capture_common_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_capture_common_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[19]"></a>gpt_capture_b_isr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, r_gpt.o(.text.gpt_capture_b_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = gpt_capture_b_isr &rArr; r_gpt_capture_common_isr
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_gpt_capture_common_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[17]"></a>gpt_counter_overflow_isr</STRONG> (Thumb, 172 bytes, Stack size 24 bytes, r_gpt.o(.text.gpt_counter_overflow_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = gpt_counter_overflow_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[c1]"></a>hal_entry</STRONG> (Thumb, 584 bytes, Stack size 24 bytes, hal_entry.o(.text.hal_entry))
+<BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = hal_entry &rArr; I2C_EE_Writedrase &rArr; I2C_EE_Writepage &rArr; R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupCreate
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buffercmp
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_BufferRead
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_BufferWrite
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_SectorErase
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_ReadID
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_ReadDeviceID
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Writedrase
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_SoftwareDelay
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_Init
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_EE_Init
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_UART4_Init
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28]"></a>i2c_callback</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, i2c_ee.o(.text.i2c_callback))
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.EEPROM_cfg)
+</UL>
+<P><STRONG><a name="[12]"></a>iic_master_eri_isr</STRONG> (Thumb, 306 bytes, Stack size 16 bytes, r_iic_master.o(.text.iic_master_eri_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = iic_master_eri_isr &rArr; iic_master_open_hw_master
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_notify
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_open_hw_master
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[f]"></a>iic_master_rxi_isr</STRONG> (Thumb, 328 bytes, Stack size 4 bytes, r_iic_master.o(.text.iic_master_rxi_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = iic_master_rxi_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[11]"></a>iic_master_tei_isr</STRONG> (Thumb, 204 bytes, Stack size 0 bytes, r_iic_master.o(.text.iic_master_tei_isr))
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[10]"></a>iic_master_txi_isr</STRONG> (Thumb, 262 bytes, Stack size 8 bytes, r_iic_master.o(.text.iic_master_txi_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = iic_master_txi_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[49]"></a>iwdt_callback</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, bsp_iwdt.o(.text.iwdt_callback))
+<BR><BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SystemReset
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_data.o(.rodata.g_iwdt0_cfg)
+</UL>
+<P><STRONG><a name="[ae]"></a>main</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 340<LI>Call Chain = main &rArr; hal_entry &rArr; I2C_EE_Writedrase &rArr; I2C_EE_Writepage &rArr; R_IIC_MASTER_Write &rArr; iic_master_read_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+<BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[d4]"></a>pvPortMalloc</STRONG> (Thumb, 298 bytes, Stack size 24 bytes, heap_4.o(.text.pvPortMalloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInsertBlockIntoFreeList
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vApplicationMallocFailedHook
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupCreate
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+</UL>
+
+<P><STRONG><a name="[f6]"></a>pxPortInitialiseStack</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, port.o(.text.pxPortInitialiseStack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = pxPortInitialiseStack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+
+<P><STRONG><a name="[4a]"></a>qe_touch_callback</STRONG> (Thumb, 68 bytes, Stack size 32 bytes, qe_touch_config.o(.text.qe_touch_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = qe_touch_callback &rArr; xTaskGenericNotifyFromISR
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyFromISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> qe_touch_config.o(.rodata.g_qe_ctsu_cfg_config01)
+</UL>
+<P><STRONG><a name="[23]"></a>qe_touch_main</STRONG> (Thumb, 154 bytes, Stack size 8 bytes, qe_touch_sample.o(.text.qe_touch_main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = qe_touch_main &rArr; RM_TOUCH_DataGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RM_TOUCH_DataGet
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RM_TOUCH_ScanStart
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RM_TOUCH_Open
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyWait
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_Open
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_entry.o(.text.hal_entry)
+</UL>
+<P><STRONG><a name="[e]"></a>sci_uart_eri_isr</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, r_sci_uart.o(.text.sci_uart_eri_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = sci_uart_eri_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[b]"></a>sci_uart_rxi_isr</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, r_sci_uart.o(.text.sci_uart_rxi_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = sci_uart_rxi_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[d]"></a>sci_uart_tei_isr</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, r_sci_uart.o(.text.sci_uart_tei_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = sci_uart_tei_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[c]"></a>sci_uart_txi_isr</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, r_sci_uart.o(.text.sci_uart_txi_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = sci_uart_txi_isr &rArr; r_sci_uart_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sci_uart_call_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[13]"></a>sdhimmc_accs_isr</STRONG> (Thumb, 328 bytes, Stack size 48 bytes, r_sdhi.o(.text.sdhimmc_accs_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = sdhimmc_accs_isr &rArr; r_sdhi_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sdhi_call_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[14]"></a>sdhimmc_card_isr</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, r_sdhi.o(.text.sdhimmc_card_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = sdhimmc_card_isr &rArr; r_sdhi_call_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_sdhi_call_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> vector_data.o(.application_vectors)
+</UL>
+<P><STRONG><a name="[af]"></a>ulSetInterruptMask</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, portasm.o(.text.ulSetInterruptMask))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvTaskExitError
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyFromISR
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
+</UL>
+
+<P><STRONG><a name="[cb]"></a>uxListRemove</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, list.o(.text.uxListRemove))
+<BR><BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+
+<P><STRONG><a name="[ef]"></a>uxTaskResetEventItemValue</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, tasks.o(.text.uxTaskResetEventItemValue))
+<BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+</UL>
+
+<P><STRONG><a name="[21]"></a>vAdc_Task</STRONG> (Thumb, 152 bytes, Stack size 8 bytes, adc_task.o(.text.vAdc_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = vAdc_Task &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_Timing_Init
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_Init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_entry.o(.text.hal_entry)
+</UL>
+<P><STRONG><a name="[d6]"></a>vApplicationMallocFailedHook</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, hal_entry.o(.text.vApplicationMallocFailedHook))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = vApplicationMallocFailedHook &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortGetFreeHeapSize
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+</UL>
+
+<P><STRONG><a name="[b1]"></a>vClearInterruptMask</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, portasm.o(.text.vClearInterruptMask))
+<BR><BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyFromISR
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+</UL>
+
+<P><STRONG><a name="[1f]"></a>vDebug_Task</STRONG> (Thumb, 204 bytes, Stack size 304 bytes, debug_task.o(.text.vDebug_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 436<LI>Call Chain = vDebug_Task &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Queue_Read
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Queue_HadUse
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Queue_isEmpty
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Queue_Init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_UART4_Init
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_entry.o(.text.hal_entry)
+</UL>
+<P><STRONG><a name="[20]"></a>vKey_Task</STRONG> (Thumb, 140 bytes, Stack size 0 bytes, key_task.o(.text.vKey_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = vKey_Task &rArr; xEventGroupSetBits &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Scan
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinWrite
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_entry.o(.text.hal_entry)
+</UL>
+<P><STRONG><a name="[ed]"></a>vListInitialise</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, list.o(.text.vListInitialise))
+<BR><BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupCreate
+</UL>
+
+<P><STRONG><a name="[f5]"></a>vListInitialiseItem</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, list.o(.text.vListInitialiseItem))
+<BR><BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+
+<P><STRONG><a name="[cc]"></a>vListInsert</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, list.o(.text.vListInsert))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = vListInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+</UL>
+
+<P><STRONG><a name="[d0]"></a>vPortEnterCritical</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, port.o(.text.vPortEnterCritical))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = vPortEnterCritical
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulSetInterruptMask
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyWait
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[d3]"></a>vPortExitCritical</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, port.o(.text.vPortExitCritical))
+<BR><BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vClearInterruptMask
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyWait
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[e4]"></a>vPortFree</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, heap_4.o(.text.vPortFree))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInsertBlockIntoFreeList
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+
+<P><STRONG><a name="[1e]"></a>vPortSVCHandler_C</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, port.o(.text.vPortSVCHandler_C))
+<BR><BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vRestoreContextOfFirstTask
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> portasm.o(.text.SVC_Handler)
+</UL>
+<P><STRONG><a name="[f0]"></a>vPortSetupTimerInterrupt</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, port.o(.text.vPortSetupTimerInterrupt))
+<BR><BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+</UL>
+
+<P><STRONG><a name="[ce]"></a>vPortYield</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, port.o(.text.vPortYield))
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskDelayUntil
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIdleTask
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyWait
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[22]"></a>vPwm_Task</STRONG> (Thumb, 204 bytes, Stack size 8 bytes, pwm_task.o(.text.vPwm_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = vPwm_Task &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskDelayUntil
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_PWM_Init
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPT_InputCapture_Init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_entry.o(.text.hal_entry)
+</UL>
+<P><STRONG><a name="[e5]"></a>vRestoreContextOfFirstTask</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, portasm.o(.text.vRestoreContextOfFirstTask))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortSVCHandler_C
+</UL>
+
+<P><STRONG><a name="[f1]"></a>vStartFirstTask</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, portasm.o(.text.vStartFirstTask))
+<BR><BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+</UL>
+
+<P><STRONG><a name="[e3]"></a>vTaskDelay</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, tasks.o(.text.vTaskDelay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vKey_Task
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+</UL>
+
+<P><STRONG><a name="[f3]"></a>vTaskInternalSetTimeOutState</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, tasks.o(.text.vTaskInternalSetTimeOutState))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[d2]"></a>vTaskMissedYield</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, tasks.o(.text.vTaskMissedYield))
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+</UL>
+
+<P><STRONG><a name="[e8]"></a>vTaskPlaceOnEventList</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, tasks.o(.text.vTaskPlaceOnEventList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[e9]"></a>vTaskPlaceOnUnorderedEventList</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, tasks.o(.text.vTaskPlaceOnUnorderedEventList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = vTaskPlaceOnUnorderedEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+</UL>
+
+<P><STRONG><a name="[ee]"></a>vTaskRemoveFromUnorderedEventList</STRONG> (Thumb, 174 bytes, Stack size 16 bytes, tasks.o(.text.vTaskRemoveFromUnorderedEventList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = vTaskRemoveFromUnorderedEventList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits
+</UL>
+
+<P><STRONG><a name="[c6]"></a>vTaskStartScheduler</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, tasks.o(.text.vTaskStartScheduler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = vTaskStartScheduler &rArr; xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulSetInterruptMask
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[c8]"></a>vTaskSuspendAll</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, tasks.o(.text.vTaskSuspendAll))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iwdt_callback
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[64]"></a>vTaskSwitchContext</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, tasks.o(.text.vTaskSwitchContext))
+<BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xPortStartScheduler
+</UL>
+
+<P><STRONG><a name="[24]"></a>vWdt_Task</STRONG> (Thumb, 188 bytes, Stack size 8 bytes, wdt_task.o(.text.vWdt_Task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = vWdt_Task &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IWDT_CounterGet
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Feed
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> hal_entry.o(.text.hal_entry)
+</UL>
+<P><STRONG><a name="[c4]"></a>xEventGroupCreate</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, event_groups.o(.text.xEventGroupCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = xEventGroupCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInitialise
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[dd]"></a>xEventGroupSetBits</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, event_groups.o(.text.xEventGroupSetBits))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = xEventGroupSetBits &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskRemoveFromUnorderedEventList
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vKey_Task
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+</UL>
+
+<P><STRONG><a name="[eb]"></a>xEventGroupWaitBits</STRONG> (Thumb, 170 bytes, Stack size 24 bytes, event_groups.o(.text.xEventGroupWaitBits))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = xEventGroupWaitBits &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxTaskResetEventItemValue
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnUnorderedEventList
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vWdt_Task
+</UL>
+
+<P><STRONG><a name="[df]"></a>xPortGetFreeHeapSize</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, heap_4.o(.text.xPortGetFreeHeapSize))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vApplicationMallocFailedHook
+</UL>
+
+<P><STRONG><a name="[ea]"></a>xPortStartScheduler</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, port.o(.text.xPortStartScheduler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = xPortStartScheduler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vStartFirstTask
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortSetupTimerInterrupt
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSwitchContext
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulSetInterruptMask
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
+</UL>
+
+<P><STRONG><a name="[c3]"></a>xQueueGenericCreate</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, queue.o(.text.xQueueGenericCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = xQueueGenericCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[f2]"></a>xQueueGenericReset</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, queue.o(.text.xQueueGenericReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = xQueueGenericReset &rArr; xTaskRemoveFromEventList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInitialise
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
+</UL>
+
+<P><STRONG><a name="[bf]"></a>xQueueGenericSend</STRONG> (Thumb, 246 bytes, Stack size 56 bytes, queue.o(.text.xQueueGenericSend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskInternalSetTimeOutState
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt0_timing_callback
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vWdt_Task
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[de]"></a>xQueueReceive</STRONG> (Thumb, 258 bytes, Stack size 48 bytes, queue.o(.text.xQueueReceive))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = xQueueReceive &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskInternalSetTimeOutState
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+</UL>
+
+<P><STRONG><a name="[dc]"></a>xQueueSemaphoreTake</STRONG> (Thumb, 230 bytes, Stack size 40 bytes, queue.o(.text.xQueueSemaphoreTake))
+<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = xQueueSemaphoreTake &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskInternalSetTimeOutState
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vWdt_Task
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+</UL>
+
+<P><STRONG><a name="[f4]"></a>xTaskCheckForTimeOut</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, tasks.o(.text.xTaskCheckForTimeOut))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = xTaskCheckForTimeOut &rArr; vPortEnterCritical
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[c5]"></a>xTaskCreate</STRONG> (Thumb, 428 bytes, Stack size 40 bytes, tasks.o(.text.xTaskCreate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = xTaskCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pxPortInitialiseStack
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInitialiseItem
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInitialise
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskStartScheduler
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[e7]"></a>xTaskDelayUntil</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, tasks.o(.text.xTaskDelayUntil))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = xTaskDelayUntil &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+</UL>
+
+<P><STRONG><a name="[d8]"></a>xTaskGenericNotifyFromISR</STRONG> (Thumb, 286 bytes, Stack size 24 bytes, tasks.o(.text.xTaskGenericNotifyFromISR))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = xTaskGenericNotifyFromISR
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vClearInterruptMask
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulSetInterruptMask
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qe_touch_callback
+</UL>
+
+<P><STRONG><a name="[d9]"></a>xTaskGenericNotifyWait</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, tasks.o(.text.xTaskGenericNotifyWait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = xTaskGenericNotifyWait &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddCurrentTaskToDelayedList
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qe_touch_main
+</UL>
+
+<P><STRONG><a name="[e6]"></a>xTaskGetTickCount</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, tasks.o(.text.xTaskGetTickCount))
+<BR><BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+</UL>
+
+<P><STRONG><a name="[b0]"></a>xTaskIncrementTick</STRONG> (Thumb, 388 bytes, Stack size 36 bytes, tasks.o(.text.xTaskIncrementTick))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = xTaskIncrementTick
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+</UL>
+
+<P><STRONG><a name="[d1]"></a>xTaskRemoveFromEventList</STRONG> (Thumb, 222 bytes, Stack size 16 bytes, tasks.o(.text.xTaskRemoveFromEventList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = xTaskRemoveFromEventList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[d5]"></a>xTaskResumeAll</STRONG> (Thumb, 336 bytes, Stack size 40 bytes, tasks.o(.text.xTaskResumeAll))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = xTaskResumeAll &rArr; xTaskIncrementTick
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskIncrementTick
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskDelayUntil
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupWaitBits
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xEventGroupSetBits
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[f7]"></a>__0printf</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[108]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[8d]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vApplicationMallocFailedHook
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vWdt_Task
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPwm_Task
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+
+<P><STRONG><a name="[109]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[10a]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[8e]"></a>putchar</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, putchar.o(i.putchar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = putchar &rArr; fputc &rArr; R_SCI_UART_Write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+</UL>
+
+<P><STRONG><a name="[8c]"></a>puts</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, puts.o(i.puts))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = puts &rArr; fputc &rArr; R_SCI_UART_Write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QSPI_FLASH_WaitForWriteEnd
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vAdc_Task
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vDebug_Task
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Test
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_entry
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[c9]"></a>__NVIC_SystemReset</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, bsp_iwdt.o(.text.__NVIC_SystemReset))
+<BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iwdt_callback
+</UL>
+
+<P><STRONG><a name="[cf]"></a>prvUnlockQueue</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, queue.o(.text.prvUnlockQueue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = prvUnlockQueue &rArr; xTaskRemoveFromEventList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskMissedYield
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
+</UL>
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueSemaphoreTake
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[cd]"></a>prvCopyDataToQueue</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, queue.o(.text.prvCopyDataToQueue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = prvCopyDataToQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
+</UL>
+
+<P><STRONG><a name="[ca]"></a>prvAddCurrentTaskToDelayedList</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, tasks.o(.text.prvAddCurrentTaskToDelayedList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = prvAddCurrentTaskToDelayedList &rArr; vListInsert
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsert
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskDelayUntil
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGenericNotifyWait
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnUnorderedEventList
+</UL>
+
+<P><STRONG><a name="[26]"></a>prvIdleTask</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, tasks.o(.text.prvIdleTask))
+<BR><BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortYield
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> tasks.o(.text.vTaskStartScheduler)
+</UL>
+<P><STRONG><a name="[d7]"></a>prvInsertBlockIntoFreeList</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, heap_4.o(.text.prvInsertBlockIntoFreeList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvInsertBlockIntoFreeList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortFree
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
+</UL>
+
+<P><STRONG><a name="[25]"></a>prvTaskExitError</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, port.o(.text.prvTaskExitError))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = prvTaskExitError
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ulSetInterruptMask
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> port.o(.text.pxPortInitialiseStack)
+</UL>
+<P><STRONG><a name="[9e]"></a>r_adc_irq_enable</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, r_adc.o(.text.r_adc_irq_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_ADC_Open
+</UL>
+
+<P><STRONG><a name="[bc]"></a>r_adc_scan_end_common_isr</STRONG> (Thumb, 176 bytes, Stack size 88 bytes, r_adc.o(.text.r_adc_scan_end_common_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = r_adc_scan_end_common_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_scan_end_isr
+</UL>
+
+<P><STRONG><a name="[a4]"></a>ctsu_correction_exec</STRONG> (Thumb, 196 bytes, Stack size 36 bytes, r_ctsu.o(.text.ctsu_correction_exec))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ctsu_correction_exec
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_CTSU_DataGet
+</UL>
+
+<P><STRONG><a name="[a5]"></a>ctsu_initial_offset_tuning</STRONG> (Thumb, 296 bytes, Stack size 36 bytes, r_ctsu.o(.text.ctsu_initial_offset_tuning))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = ctsu_initial_offset_tuning
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_CTSU_DataGet
+</UL>
+
+<P><STRONG><a name="[a6]"></a>gpt_calculate_duty_cycle</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, r_gpt.o(.text.gpt_calculate_duty_cycle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = gpt_calculate_duty_cycle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_DutyCycleSet
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Open
+</UL>
+
+<P><STRONG><a name="[a7]"></a>r_gpt_enable_irq</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, r_gpt.o(.text.r_gpt_enable_irq))
+<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_GPT_Open
+</UL>
+
+<P><STRONG><a name="[c0]"></a>r_gpt_capture_common_isr</STRONG> (Thumb, 190 bytes, Stack size 32 bytes, r_gpt.o(.text.r_gpt_capture_common_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = r_gpt_capture_common_isr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_capture_b_isr
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpt_capture_a_isr
+</UL>
+
+<P><STRONG><a name="[a8]"></a>iic_master_open_hw_master</STRONG> (Thumb, 370 bytes, Stack size 20 bytes, r_iic_master.o(.text.iic_master_open_hw_master))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = iic_master_open_hw_master
+</UL>
+<BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Open
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_eri_isr
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Close
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Abort
+</UL>
+
+<P><STRONG><a name="[a9]"></a>iic_master_read_write</STRONG> (Thumb, 266 bytes, Stack size 12 bytes, r_iic_master.o(.text.iic_master_read_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = iic_master_read_write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Read
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IIC_MASTER_Write
+</UL>
+
+<P><STRONG><a name="[c7]"></a>iic_master_notify</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, r_iic_master.o(.text.iic_master_notify))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iic_master_notify
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iic_master_eri_isr
+</UL>
+
+<P><STRONG><a name="[aa]"></a>r_ioport_pins_config</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, r_ioport.o(.text.r_ioport_pins_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = r_ioport_pins_config &rArr; bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bsp_vbatt_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_Open
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinsCfg
+</UL>
+
+<P><STRONG><a name="[ab]"></a>bsp_vbatt_init</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, r_ioport.o(.text.bsp_vbatt_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = bsp_vbatt_init &rArr; R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectEnable
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_BSP_RegisterProtectDisable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;R_IOPORT_PinCfg
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;r_ioport_pins_config
+</UL>
+
+<P><STRONG><a name="[1d]"></a>iwdt_nmi_internal_callback</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, r_iwdt.o(.text.iwdt_nmi_internal_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = iwdt_nmi_internal_callback
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> r_iwdt.o(.text.R_IWDT_Open)
+</UL>
+<P><STRONG><a name="[da]"></a>r_sci_uart_call_callback</STRONG> (Thumb, 64 bytes, Stack size 32 bytes, r_sci_uart.o(.text.r_sci_uart_call_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = r_sci_uart_call_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_eri_isr
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_tei_isr
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_rxi_isr
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sci_uart_txi_isr
+</UL>
+
+<P><STRONG><a name="[db]"></a>r_sdhi_call_callback</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, r_sdhi.o(.text.r_sdhi_call_callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = r_sdhi_call_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdhimmc_card_isr
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdhimmc_accs_isr
+</UL>
+
+<P><STRONG><a name="[f9]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[f8]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 136 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf
+</UL>
+
+<P><STRONG><a name="[fc]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[fb]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
